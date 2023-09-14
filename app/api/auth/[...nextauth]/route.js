@@ -25,7 +25,7 @@ export const authOptions = {
           const userExists = await User.findOne({ email });
 
           if (!userExists) {
-            const res = await fetch("/api/user", {
+            const res = await fetch("https://auth-proj.vercel.app/api/user", {
               method: "POST",
               headers: { "Content-Type": "application/json" },
               body: JSON.stringify({ name, email }),
@@ -46,7 +46,7 @@ export const authOptions = {
           const userExists = await User.findOne({ email });
 
           if (!userExists) {
-            const res = await fetch("/api/user", {
+            const res = await fetch("https://auth-proj.vercel.app/api/user", {
               method: "POST",
               headers: { "Content-Type": "application/json" },
               body: JSON.stringify({ name, email }),
