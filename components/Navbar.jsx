@@ -12,16 +12,17 @@ const Navbar = () => {
       </Link>
 
       {status === "authenticated" ? (
-        <button 
-        onClick={()=> signOut() }
-        className="bg-slate-900 text-white px-6 py-2 rounded-md ">
+        <button
+          onClick={() => signOut()}
+          className="bg-slate-900 text-white px-6 py-2 rounded-md "
+        >
           Sign Out
         </button>
       ) : (
         <button
-        onClick={()=> signIn("google") }
-        
-        className="bg-slate-900 text-white px-6 py-2 rounded-md ">
+          // onClick={()=> signIn("google") }
+          className="bg-slate-900 text-white px-6 py-2 rounded-md "
+        >
           Sign In
         </button>
       )}
