@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <div className="p-4 flex justify-between items-center shadow-md">
       <Link className="font-bold text-lg text-blue-700" href={"/"}>
-        LOGO
+        LOGO test
       </Link>
 
       {status === "authenticated" ? (
